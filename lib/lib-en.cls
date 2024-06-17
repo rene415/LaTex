@@ -3,9 +3,11 @@
   LaTeX class for 42-themed documents]
 \LoadClass{article}
 
+
 %  Required Packages
 \RequirePackage{graphicx}
 \RequirePackage{background}
+\usepackage{hyperref}
 
 % background image
 \backgroundsetup{
@@ -13,14 +15,14 @@
     opacity=0.5, %changes the opacity of theimage to half
     angle=0,
     contents={
-        \includegraphics[width=\paperwidth,height=\paperheight]{assets/bg-white.png}
+        \includegraphics[width=\paperwidth,height=\paperheight]{../lib/assets/bg-white.png}
     } %path to the file
 }
 
 % costume title
-\newcommand{\customtitle}[1]{%
-  \begin{center}
-    \Large\bfseries #1 \par
-    \date{\today}
-  \end{center}
+\newcommand{\customtitle}[2]{
+  \title{\Huge\bfseries #1}
+  \author{#2}
+  \date{\today}
+  \maketitle
 }

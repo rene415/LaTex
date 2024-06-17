@@ -1,18 +1,19 @@
 %poiting to the class file that has all of the information about the file
-\documentclass{lib-en}
+\documentclass{../lib/lib-en}
 
 % we begin the document 
 \begin{document}
 
 % adding the title of the pdf
-\title{Sample Document}
-\author{Author Name}
-\date{\today}
+%  \title{Sample Document}
+%  \author{Author Name}
+%  \date{\today}
 
-\maketitle
-
+% \maketitle
 % added a custom title referrenced on the lib-en.cls file
-\customtitle{Hello world}
+\customtitle{Sample Title}{Rene Ramirez}
+\newpage
+
 
 \section{Introduction}
 This is a sample document.
@@ -22,6 +23,10 @@ This is another secion
 % adding a new page to the pdf
 \newpage
 
-\input{resources/requisites} %adding a mandatory section
+\input{../lib/resources/commonInstructions.tex}
+
+\newpage
+
+\input{../lib/resources/requisites} %adding a mandatory section
 
 \end{document}
