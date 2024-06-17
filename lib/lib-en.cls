@@ -1,5 +1,5 @@
 %\NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{lib-en}[2024/06/14 v1.0
+\ProvidesClass{../lib/lib-en}[2024/06/14 v1.0
   LaTeX class for 42-themed documents]
 \LoadClass{article}
 
@@ -8,6 +8,8 @@
 \RequirePackage{graphicx}
 \RequirePackage{background}
 \usepackage{hyperref}
+
+% Custom Font edits
 
 % background image
 \backgroundsetup{
